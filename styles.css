@@ -1,0 +1,236 @@
+body {
+    font-family: "Dosis", sans-serif; /* Set the default font for the body to Arial */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    background-color: #fff; /* Light blue background color */
+    color: #333; /* Dark gray text color for readability */
+}
+
+.menu_nav {
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex; /* Use flexbox for horizontal layout */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space out elements */
+    padding-top: 10px;
+}
+
+header {
+    background-color: #003366;
+}
+
+header::after {
+    content: "";
+    display: flex;
+    position: relative;
+    z-index: 1;
+    left: 0;
+    bottom: -19px;
+    width: 100%;
+    height: 20px;
+    background-color: #003366; /* Couleur du menu */
+    clip-path: polygon(0 0, 100% 100%, 100% 0);
+}
+
+.header-logo {
+    width: 100px; /* Adjust the logo size */
+}
+
+.banner {
+    background-color: #3b5c72; /* Couleur pastel */
+    color: #FFD700; /* Couleur du texte */
+    text-align: center;
+    padding: 20px 0;
+    font-size: 48px;
+    position: relative;
+}
+
+.banner::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    width: 100%;
+    height: 20px;
+    background-color: #003366; /* Couleur du menu */
+    clip-path: polygon(0 0, 0 100%, 100% 100%);
+}
+
+
+
+nav {
+    flex-grow: 1; /* Allow navigation to grow and fill space */
+    margin-left: 20px; /* Space between logo and nav */
+}
+
+
+nav ul {
+    list-style: none; /* Remove bullet points from the list */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Display list items in a flexible row */
+    justify-content: space-around; /* Distribute space evenly around the list items */
+}
+
+nav ul li {
+    font-size: 24px;
+    display: inline; /* Display list items inline */
+    margin-right: 20px; /* Space between each menu item */
+}
+
+nav ul li:last-child {
+    margin-right: 0; /* Remove right margin for the last item */
+}
+
+nav a {
+    text-decoration: none; /* Remove underline from links */
+    color: #f0d12d; /* Yellow color for link text */
+    font-weight: bold; /* Bold font for emphasis */
+    padding: 8px 16px; /* Padding inside each link */
+    transition: background-color 0.3s; /* Smooth transition for background color change on hover */
+}
+
+nav a:hover {
+    background-color: #f0d12d; /* Change background color on hover */
+    color: #004ea8; /* Change text color on hover */
+}   
+
+.hero {
+    position: relative; /* Position relative for overlay */
+    background-image: url('background.jpg'); /* Placeholder background image */
+    background-size: cover; /* Cover the entire hero section */
+    background-position: bottom; /* Center the background image */
+    padding: 100px 20px; /* Padding for larger hero section */
+    text-align: center; /* Center the text */
+    color: #fff; /* White text color */
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
+}
+
+.hero::after {
+    content: ""; /* Empty content for overlay */
+    position: absolute; /* Position overlay */
+    top: 0; /* Start at the top */
+    left: 0; /* Start at the left */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
+    background-color: rgba(0, 78, 168, 0.4); /* Transparent blue overlay */
+}
+
+
+.hero h1 {
+    position: relative; /* Position relative to be above overlay */
+    font-size: 3em; /* Larger font size */
+    margin-bottom: 10px; /* Space below the heading */
+}
+
+main {
+    background-color: #f0cf2d46; /* White background for contrast */
+}
+
+.intro {
+    padding:10px;
+    display:flex;
+}
+
+.flash-info {
+    display: flex; /* Flex layout */
+    align-items: center; /* Center items vertically */
+    background-color: #f0d12d; /* Yellow background */
+    padding: 10px 20px; /* Padding inside the flash info */
+    margin: 20px 0; /* Margin around the flash info box */
+}
+
+.flash-info-icon {
+    margin-right: 10px; /* Space between icon and text */
+}
+
+footer {
+    background-color: #004ea8; /* Footer background color */
+    color: #f0d12d; /* Footer text color */
+    text-align: center; /* Center the text */
+    padding: 10px 0; /* Padding around the footer content */
+    position: relative; /* Positioning for layout purposes */
+    bottom: 0; /* Stick to the bottom of the page */
+    width: 100%; /* Full width footer */
+}
+footer a {
+    color: #f0d12d;  
+}
+
+.header-blason {
+    width: 80px; /* Set the width of the blason image */
+    display: block; /* Display as a block element */
+    margin: auto; /* Center the image */
+}
+
+.pyramid-img {
+    width: 100%; /* Full width of the parent container */
+    max-width: 400px; /* Maximum width for the image */
+    display: block; /* Display as a block element */
+    margin: auto; /* Center the image */
+}
+
+.text{
+    margin: 20px;
+    padding: 10px;
+    margin-bottom: 0;
+}
+
+.carte{
+    display: flex;
+    margin: auto;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Stack elements vertically on smaller screens */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .hero {
+        padding: 50px 10px; /* Reduce padding for smaller screens */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack menu items vertically on smaller screens */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    nav ul li {
+        padding:10px
+    }
+
+    nav a {
+        padding: 0px; /* Increase padding for touch targets */
+        font-size: 1em; /* Adjust font size for readability */
+        margin-bottom: 5px; /* Space between each menu item */
+    }
+
+    .flash-info {
+        flex-direction: column; /* Stack content vertically */
+        align-items: flex-start; /* Align content to start */
+    }
+
+    .flash-info-icon {
+        margin-bottom: 10px; /* Space below icon */
+    }
+
+    .hero h1 {
+        font-size: 2em; /* Adjust heading size for smaller screens */
+    }
+
+    .intro {
+        padding: 10px; /* Reduce padding for smaller screens */
+        display:block;
+    }
+
+    .carte{
+        display: block;
+    }
+
+    .carte img{
+        width: 100%;
+    }
+}
