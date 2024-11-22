@@ -1,0 +1,15 @@
+# Blocage des robots de l'exploration sur l'intégralité du site
+User-agent: *
+Disallow: /
+
+# Autorisation pour Googlebot d'explorer tout le site
+User-agent: Googlebot
+Disallow:
+
+# Blocage d'une section spécifique
+User-agent: *
+Disallow: /private/
+
+# Autorisation d'exploration pour certaines pages
+User-agent: *
+Allow: /public/page.html
