@@ -1,9 +1,56 @@
 <!DOCTYPE html>
 <html>
-<?php include 'Template/head.php'; ?>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Bienvenue à La Place du Caillou, un lieu unique pour des événements exceptionnels à Saint-Christol-lès-Alès.">
+        <meta name="keywords" content="La place du caillou, site officiel, place du caillou, Saint-Christol-lès-Alès, événements, visite, tourisme, caillou, place, activité">
+        <meta name="robots" content="index, follow">
+    
+        <title>La Place du Caillou</title>
+        <link rel="icon" href="IMG/logo_v1.png" type="image/x-icon">
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
+        
+    
+        <link rel="stylesheet" href="styles.css">
+    
+        <script>
+            
+        if (window.location.pathname.endsWith('.html')) {
+            var newUrl = window.location.pathname.replace('.html', '');
+            window.location.replace(newUrl);
+        }
+        if (window.location.pathname.endsWith('index')) {
+            var newUrl = window.location.pathname.replace('index', '');
+            window.location.replace(newUrl);
+        }
+        </script>
+    </head>
 <body>
 
-    <?php include 'Template/header.php'; ?>
+    <header>
+        <div class="banner">
+            La Place Du Caillou
+        </div>
+        <div class="menu_nav">
+            <!-- Header section with the blason image and navigation menu -->
+            <a href="index.html"><img src="../IMG/logo_v1.png" alt="Logo LpdC" class="header-logo"></a>
+            <nav>
+                <ul>
+                    <!-- Adjusted padding and margin to create tighter spacing between items -->
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="histoire.html">Son histoire</a></li>
+                    <li><a href="engagement.html">Son engagement</a></li>
+                    <li><a href="evenements.html">Ses Événements</a></li>
+                    <li><a href="plan.html">Le plan</a></li>
+                    <li><a href="tarif.html">Tarif</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
     <main>
         <section class="hero">
             <h1>Les evenements à La place du Caillou</h1>
@@ -21,6 +68,8 @@
             <p>Un employer municipal va sous vos yeux netoiller La place du caillou</p>
         </section>
     </main>
-    <?php include 'Template/footer.php'; ?>
+    <footer>
+        Ce site a été réalisé par les élèves de la filière <a href="https://www.youtube.com/watch?v=2qBlE2-WL60" target="_blank">MP2I</a> des Classes Préparatoires aux Grandes Ecoles de la cité scolaire Kleber de Strasbourg.
+    </footer>
 </body>
 </html>
