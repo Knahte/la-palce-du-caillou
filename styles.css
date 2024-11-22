@@ -97,7 +97,7 @@ nav a:hover {
 
 .hero {
     position: relative; /* Position relative for overlay */
-    background-image: url('background.jpg'); /* Placeholder background image */
+    background-image: url('IMG/background.jpg'); /* Placeholder background image */
     background-size: cover; /* Cover the entire hero section */
     background-position: bottom; /* Center the background image */
     padding: 100px 20px; /* Padding for larger hero section */
@@ -160,6 +160,12 @@ footer a {
 
 .header-blason {
     width: 80px; /* Set the width of the blason image */
+    display: block; /* Display as a block element */
+    margin: auto; /* Center the image */
+}
+
+.header-logo {
+    width: 120px; /* Set the width of the blason image */
     display: block; /* Display as a block element */
     margin: auto; /* Center the image */
 }
